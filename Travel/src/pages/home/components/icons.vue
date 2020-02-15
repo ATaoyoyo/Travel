@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <swiper>
+    <swiper :options="swiperOption">
       <swiper-slide v-for="(item,v) of pages" :key="v">
         <div class="icon" v-for="icon of item" :key="icon.id">
           <div class="icon-img">
@@ -17,6 +17,9 @@ export default {
   name: 'Icons',
   data () {
     return {
+      swiperOption: {
+        autopaly: false
+      },
       iconList: [
         {id: 1, src: 'https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png', desc: '热门景点'},
         {id: 2, src: 'https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png', desc: '热门景点'},
