@@ -8,7 +8,7 @@
       输入城市/景点/游玩主题
     </div>
     <div class="header-right">
-      <span>重庆</span>
+      <router-link tag="span" to="/city">重庆</router-link>
       <i class="iconfont iconxiala"></i>
     </div>
   </div>
@@ -29,7 +29,7 @@ export default {
     display flex
     align-items center
     width 100%
-    height 0.86rem
+    height $headerHeight
     color #ffffff
     background-color $bgColor
     .header-left
@@ -38,10 +38,11 @@ export default {
       float left
       .iconzuo
         display inline-block
-        width 100%
-        height 100%
-        font-size 0.7rem
-        line-height 0.86rem
+        width $headerHeight
+        height $headerHeight
+        text-align center
+        font-size 0.5rem
+        line-height $headerHeight
     .header-input
       display flex
       align-items center
