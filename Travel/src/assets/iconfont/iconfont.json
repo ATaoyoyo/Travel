@@ -1,0 +1,44 @@
+{
+  "id": "1632967",
+  "name": "Travel",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "慕课去哪儿",
+  "glyphs": [
+    {
+      "icon_id": "10400911",
+      "name": "票",
+      "font_class": "piao",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "2855377",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "5924468",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "5924473",
+      "name": "左",
+      "font_class": "zuo",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "7637611",
+      "name": "下拉",
+      "font_class": "xiala",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    }
+  ]
+}
