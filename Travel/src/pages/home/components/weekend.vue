@@ -1,6 +1,6 @@
 <template>
-  <div class="recommend">
-    <div class="recommend-title">周末去哪儿</div>
+  <div class="weekend">
+    <div class="weekend-title">周末去哪儿</div>
     <ul>
       <li class="item border-bottom" v-for="item of list" :key="item.id">
         <div class="item-img-wrapper">
@@ -24,8 +24,7 @@ export default {
 </script>
 <style lang="stylus" scoped>
 @import '~styles/common.styl'
-.recommend-title
-  margin-top .2rem
+.weekend-title
   line-height .4rem
   background #eeeeee
   text-indent .2rem
