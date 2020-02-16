@@ -2,16 +2,22 @@
   <div class="city">
     <city-header></city-header>
     <search></search>
+    <list></list>
+    <letter></letter>
   </div>
 </template>
 <script>
 import CityHeader from './components/header'
-import search from './components/search'
+import Search from './components/search'
+import List from './components/list'
+import Letter from './components/letter'
 export default {
   name: 'City',
   components: {
     CityHeader,
-    search
+    Search,
+    List,
+    Letter
   }
 }
 </script>
