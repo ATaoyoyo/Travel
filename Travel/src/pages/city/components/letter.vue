@@ -1,15 +1,28 @@
 <template>
   <ul class="letter">
-    <li class="letter-item">A</li>
-    <li class="letter-item">A</li>
-    <li class="letter-item">A</li>
-    <li class="letter-item">A</li>
-    <li class="letter-item">A</li>
+    <li class="letter-item" v-for="(item, i) of getLetterList" :key="i">{{item}}</li>
   </ul>
 </template>
 <script>
 export default {
-  name: 'Letter'
+  name: 'Letter',
+  props: {
+    list: Object
+  },
+  data () {
+    return {
+      letterList: []
+    }
+  },
+  computed: {
+    getLetterList () {
+      const list = []
+      for (let i in this.list) {
+        list.push(i)
+      }
+      return list
+    }
+  }
 }
 </script>
 <style lang="stylus" scoped>
@@ -27,5 +40,5 @@ export default {
   text-align center
   color $bgColor
   .letter-item
-    line-height .35rem
+    line-height .45rem
 </style>
